@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Work pls!"
+
 #
 # Display the unity version
 #
