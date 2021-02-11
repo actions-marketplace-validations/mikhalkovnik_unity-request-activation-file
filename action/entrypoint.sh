@@ -25,6 +25,22 @@ UNITY_EXIT_CODE=$?
 # Output the resulting file by copying
 cp $FILE_NAME $HOME/$FILE_PATH
 
+# Print file content because normal execution path not working for my project
+echo "Print result file content"
+cat $FILE_NAME
+
+echo ""
+echo "Current PWD"
+echo pwd
+ls -lah
+echo ""
+echo "Copied file's directory"
+echo $HOME/$FILE_PATH
+ls -lah $HOME
+echo ""
+echo "Env:"
+printenv
+
 # Set resulting name as output variable
 echo ::set-output name=filePath::$FILE_PATH
 
@@ -53,6 +69,3 @@ else
   echo ""
   exit $UNITY_EXIT_CODE
 fi
-
-
-
