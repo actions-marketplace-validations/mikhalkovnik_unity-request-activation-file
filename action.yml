@@ -1,10 +1,10 @@
-name: 'Unity - Request Activation File'
+name: 'mikhalkovnik's Fork: Unity - Request Activation File'
 author: Webber Takken <webber@takken.io>
 description: 'Request the manual activation file for acquiring a Unity personal license.'
 inputs:
   unityVersion:
     required: false
-    default: '2019.2.11f1'
+    default: '2020.2.3f1'
     description: 'Version of unity to use for building the project.'
   customImage:
     required: false
